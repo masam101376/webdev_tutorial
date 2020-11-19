@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <p><input type="text" id="inputForm">ここに名前を入力してください。</p>
+        
+        <button id="submitButton">送信する</button>
+        
+        <p id="newMessage"></p>
+        
+        <script type="text/javascript">
+            /* var x = 5;
+            alert(x);
+            alertは変数の中身を確認したりするのに便利。 */
+            
+            document.getElementById("submitButton").onclick = function(){
+                var name = "";
+                name = document.getElementById("inputForm").value;
+                // alert(name);
+                document.getElementById("newMessage").innerHTML = name + "さん、以下が申込内容になります。";
+            }
+            
+        </script>
+        
+    </body>
+</html>

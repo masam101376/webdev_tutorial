@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+        <title>JavaScript</title>
+        
+        <style type="text/css">
+            .clear-float {
+                clear: both:
+            }
+            
+            .circle {
+                height: 75px;
+                width: 75px;
+                border-radius: 50%;
+                float: left;
+                margin: 20px;
+            }
+            
+            #red-circle {
+                background-color: red;
+            }
+            
+            #blue-circle {
+                background-color: blue;
+            }
+            
+            #green-circle {
+                background-color: green;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <p id="text">Hello World!</p>
+        <button id="myButton">Change Text!</button>
+        
+        <p id="secondParagraph">JavaScriptは、</p>
+        <button id="secondButton">追記する！</button>
+        
+        <p id="thirdParagraph">スタイルを変更してみましょう</p>
+        <button id="changeStyle">スタイルを変更する！</button>
+        
+        <div class="clear-float"></div>
+        
+        <div id="red-circle" class="circle"></div>
+        <div id="blue-circle" class="circle"></div>
+        <div id="green-circle" class="circle"></div>
+        
+        <script type="text/javascript">
+            document.getElementById("myButton").onclick = function(){
+                // alert("ボタンがクリックされました！");
+                document.getElementById("text").innerHTML = "クリックしましたね！";
+            }
+            
+            document.getElementById("secondButton").onclick = function(){
+                document.getElementById("secondParagraph").innerHTML += "ブラウザでもサーバーサイドでも動作するプログラミング言語です。";
+            }
+            
+            document.getElementById("changeStyle").onclick = function(){
+                // document.getElementById("thirdParagraph").style.color = "red";
+                document.getElementById("thirdParagraph").style.display = "none";
+            }
+            
+            // JSでスタイルを扱いたいときはwww.w3schools.comを参照する。
+            
+            document.getElementById("red-circle").onclick = function(){
+                document.getElementById("red-circle").style.display = "none";
+            }    
+            
+            document.getElementById("blue-circle").onclick = function(){
+                document.getElementById("blue-circle").style.display = "none";
+            }
+            
+            document.getElementById("green-circle").onclick = function(){
+                document.getElementById("green-circle").style.display = "none";
+            }
+            
+        </script>
+        
+
+        
+        
+    </body>
+</html>

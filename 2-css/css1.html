@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+    <!-- CSSはheadタグの中、body内に散在、外部ファイルの3パターンあり、できるだけ外部に切り分けた方が別々にメンテナンスできる -->
+    <head>
+        <title>Webpage with style</title>
+        
+        <!-- 内部CSS -->
+        <style type="text/css">
+            h1 {
+                color: green;
+            }
+            
+            p {
+                color: blue;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <!-- インラインCSS -->
+        <h1 style="color:green">新プロダクトのご紹介</h1>
+        <p style="color:blue;font-size:100%">今回は、新しくリリースするプロダクトの紹介をします。</p>
+        
+        <!-- 全てのタグに逐一CSSを指定するのは効率が悪い → 内部CSS, 外部CSS -->
+        
+    </body>
+<html>

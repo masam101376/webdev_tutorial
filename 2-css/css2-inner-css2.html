@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+    <!-- CSSはheadタグの中、body内に散在、外部ファイルの3パターンあり、できるだけ外部に切り分けた方が別々にメンテナンスできる -->
+    <head>
+        <title>Webpage with style</title>
+        
+        <!-- 内部CSS -->
+        <style type="text/css">
+            .blue {
+                color: blue;
+            }
+            
+            .large {
+                font-size: 100%;
+            }
+            
+            #green {
+                color: green;
+            }
+            
+            .underlined {
+                text-decoration: underline;
+            }
+            
+            .first-section {
+                background: pink;
+                width: 50%;
+                float: right;
+            }
+            
+            .second-section {
+                background: yellow;
+                width: 30%;
+                float: left;
+            }
+            
+            .clear-float {
+                clear: both;
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        <!-- インラインCSS -->
+        <div class="first-section">
+            <h1 class="blue">新プロダクトのご紹介</h1>
+            <p class="blue">今回は、新しくリリースするプロダクトの紹介をします。</p>
+        </div>
+
+        <div class="second-section">
+            <p class="large">バーチャルリアリティが体験できるVRゴーグルを開発します。</p>
+            <p id="green">このVRゴーグルは従来品よりも<span class="underlined">解像度</span>が高くなっています。</p>
+            <!-- classとidはJSで扱うときに大きな違いが出てくる。 -->
+            <!-- spanはタグ中の一部分を取り出せる -->
+        </div>
+        
+        <div class="clear-float"></div>
+        
+        <p>Third Paragraph</p>
+    </body>
+<html>
