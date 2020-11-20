@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>for</title>
+    </head>
+    <body>
+        
+        <p><button id="tweet">Tweet!</button></p>
+        <div id="tweetsDiv"></div>
+
+        <script type="text/javascript">
+        
+        /* for(var i=0;i<5;i++){
+            alert(i);
+        }
+
+        for(var i=5;i>0;i--){
+            console.log(i);
+        } */
+        
+        var tweets = ["Morning!","Good Day!","Dinner!","Good Night!","Nice Dream!"];
+        var tweetsString = "";
+
+        document.getElementById("tweet").onclick = function(){
+            for(var i=0;i<tweets.length;i++){
+            // console.log(tweets[i]);
+            tweetsString = tweetsString + "<p>" + tweets[i] + "</p>";
+            }
+            document.getElementById("tweetsDiv").innerHTML = tweetsString;
+        }
+
+        </script>
+        
+    </body>
+</html>
