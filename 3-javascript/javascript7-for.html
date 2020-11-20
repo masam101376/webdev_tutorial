@@ -22,9 +22,14 @@
         var tweetsString = "";
 
         document.getElementById("tweet").onclick = function(){
-            for(var i=0;i<tweets.length;i++){
-            // console.log(tweets[i]);
-            tweetsString = tweetsString + "<p>" + tweets[i] + "</p>";
+
+            var i = 0;
+            while(i < tweets.length){
+                // for(var i=0;i<tweets.length;i++){
+                // console.log(tweets[i]);
+
+                tweetsString = tweetsString + "<p>" + tweets[i] + "</p>";
+                i++;
             }
             document.getElementById("tweetsDiv").innerHTML = tweetsString;
         }
