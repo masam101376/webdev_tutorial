@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>variables</title>
+    </head>
+    <body>
+        
+        <p>秘密の暗号を入れてください</p>
+        <p><input type="text" id="magicWord"></p>
+        <p><button id="checkMagicWord">暗号をチェックする！</button></p>
+
+        <script type="text/javascript">
+            /* var x = 2;
+
+            // == ... 左辺と右辺を比較する演算子
+            if(x == 1){
+                alert("xは1です。");
+            } else {
+                alert("xは1ではありません！" + x + "です。");
+            } */
+            
+            document.getElementById("checkMagicWord").onclick = function(){
+                var password = "masam101376";
+                var magicWord = document.getElementById("magicWord").value;
+                
+                if(password == magicWord){
+                    alert("OKです！");
+                } else {
+                    alert("パスワードが間違っています。");
+                }
+            }
+
+        </script>
+        
+    </body>
+</html>
