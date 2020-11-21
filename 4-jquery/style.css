@@ -3,10 +3,12 @@
     width: 100px;
     border-radius: 50%;
     background-color: green;
+    margin: 10px;
 }
 
 .square {
     height: 100px;
     width: 100px;
     background-color: red;
+    margin: 10px;
 }

@@ -6,10 +6,10 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <p class="circle"></p>
-        <p class="square"></p>
-        <p class="square"></p>
-        
+        <div class="circle"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+
         <!-- Google APIからjQueryを読み込む方法
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         -->
@@ -23,6 +23,11 @@
             } else {
                 alert("jQueryが無事に読み込まれました！");
             } */
+
+            // jqueryはページ全体を$マークで指定できる。
+            $(".circle").click(function(){
+                alert("円がクリックされました！");
+            })
 
 
         </script>
