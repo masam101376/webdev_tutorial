@@ -37,7 +37,8 @@
             }) */
 
             $(".square").click(function(){
-                $(".square").css("display","none");
+                // $(this): 親要素のうち（この場合はsquareクラスのうち）クリックしたものだけを取得する。
+                $(this).css("display","none");
             })
         </script>
     
