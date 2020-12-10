@@ -13,9 +13,13 @@
         <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
 
         <div id="draggable">I am draggable</div>
+        <div id="vertically-draggable">
+            <p>I can be dragged only vertically</p>
+        </div>
 
         <script type="text/javascript">
-            $("#draggable").draggable();    
+            $("#draggable").draggable();
+            $("#vertically-draggable").draggable({ axis: "y" });
         </script>
 
     </body>
