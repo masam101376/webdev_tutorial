@@ -14,30 +14,23 @@
                 display: none;
             }
 
-            #optionHider {
-                display: none;
-            }
         </style>
     </head>
     <body>
         <script src="jquery-3.1.1.min.js"></script>
         
-        <button id="optionShower">オプションを表示</button>
-        <p></p>
-        <button id="optionHider">オプションを非表示</button>
+        <button id="optionDisplaySelector">オプションを表示</button>
         <p id="optionNavigator">Options</p>
 
         <script type="text/javascript">
-            $("#optionShower").click(function(){
-                $("#optionNavigator").show();
-                $("#optionShower").hide();
-                $("#optionHider").show();
-            })
-
-            $("#optionHider").click(function(){
-                $("#optionNavigator").hide();
-                $("#optionShower").show();
-                $("#optionHider").hide();
+            $("#optionDisplaySelector").click(function(){
+                if($("#optionNavigator").css("display") == "none"){
+                    $("#optionNavigator").show();
+                    $("#optionDisplaySelector").html("オプションを非表示");
+                } else {
+                    $("#optionNavigator").hide();
+                    $("#optionDisplaySelector").html("オプションを表示");
+                }
             })
         </script>
 
