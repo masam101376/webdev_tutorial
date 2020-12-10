@@ -4,32 +4,28 @@
         <meta charset="UTF-8">
         <title>jQuery-4</title>
         <style>
-            #circle {
-                width: 150px;
-                height: 150px;
-                border-radius: 50%;
-                background-color: green;
-                margin: 10px;
-            }
-
-            .square {
-                width: 150px;
-                height: 150px;
-                background-color: red;
-                margin: 10px;
-            }
+            #fadeInText {
+                display: none;
+            }    
         </style>
     </head>
     <body>
         <script src="jquery-3.1.1.min.js"></script>
 
 
-        <p>このテキストはフェードアウトします。</p>
+        <p id="fadeOutText">このテキストはフェードアウトします。</p>
         <button id="fadeOut">Fade Out!</button>
+
+        <p id="fadeInText">最初は隠れています。</p>
+        <button id="fadeIn">Fade In!</button>
 
         <script type="text/javascript">
            $("#fadeOut").click(function(){
-               $("p").fadeOut("slow");
+               $("#fadeOutText").fadeOut("slow");
+           })
+
+           $("#fadeIn").click(function(){
+               $("#fadeInText").fadeIn("slow");
            })
         </script>
     
