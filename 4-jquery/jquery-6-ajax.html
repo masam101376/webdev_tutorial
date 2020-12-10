@@ -10,6 +10,8 @@
     <body>
         <script src="jquery-3.1.1.min.js"></script>
 
+        <p></p>
+
         <script type="text/javascript">
             /*
             $.get("info.txt",function(data){
@@ -19,10 +21,12 @@
 
             // ajaxメソッド（非同期通信）: 通信の成否で処理を分岐する。
             $.ajax("info.txt").done(function(data){
-                alert(data);
+                // alert(data);
+                $("p").html(data);
             })
             .fail(function(){
-                alert("データの取得に失敗しました！");
+                // alert("データの取得に失敗しました！");
+                $("p").html("データの取得に失敗しました！");
             })
         </script>
 
