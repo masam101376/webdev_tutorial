@@ -5,6 +5,14 @@
         <title>jQuery-7-regex</title>
         <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.css">
         <style>
+            .draggable {
+                width: 90px;
+                height: 90px;
+                padding: 0.5em;
+                float: left;
+                margin: 0 10px 10px 0;
+            }
+
             #vertically-draggable {
                 margin-bottom: 20px;
                 cursor: n-resize;
@@ -16,7 +24,7 @@
         <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
 
         <div id="draggable">I am draggable</div>
-        <div id="vertically-draggable">
+        <div id="vertically-draggable" class="draggable ui-widget-content">
             <p>I can be dragged only vertically</p>
         </div>
 
