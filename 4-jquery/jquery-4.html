@@ -8,12 +8,39 @@
             #fadeInText {
                 display: none;
             }
-            */    
+            */
+
+            #optionNavigator {
+                display: none;
+            }
+
+            #optionHider {
+                display: none;
+            }
         </style>
     </head>
     <body>
         <script src="jquery-3.1.1.min.js"></script>
         
+        <button id="optionShower">オプションを表示</button>
+        <p></p>
+        <button id="optionHider">オプションを非表示</button>
+        <p id="optionNavigator">Options</p>
+
+        <script type="text/javascript">
+            $("#optionShower").click(function(){
+                $("#optionNavigator").show();
+                $("#optionShower").hide();
+                $("#optionHider").show();
+            })
+
+            $("#optionHider").click(function(){
+                $("#optionNavigator").hide();
+                $("#optionShower").show();
+                $("#optionHider").hide();
+            })
+        </script>
+
         <!-- 
         <p id="fadeOutText">このテキストはフェードアウトします。</p>
         <button id="fadeOut">Fade Out!</button>
@@ -22,11 +49,9 @@
 
         <p id="fadeInText">最初は隠れています。</p>
         <button id="fadeIn">Fade In!</button>
-        -->
-
+        
         <script type="text/javascript">
-
-            /* 
+ 
             $("#fadeOut").click(function(){
                $("#fadeOutText").fadeOut("slow");
             })
@@ -34,9 +59,9 @@
             $("#fadeIn").click(function(){
                $("#fadeInText").fadeIn("slow");
             })
-            */
            
         </script>
-    
+        -->
+
     </body>
 </html>
