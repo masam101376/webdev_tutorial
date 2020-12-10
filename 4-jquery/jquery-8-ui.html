@@ -5,7 +5,10 @@
         <title>jQuery-7-regex</title>
         <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.css">
         <style>
-            
+            #vertically-draggable {
+                margin-bottom: 20px;
+                cursor: n-resize;
+            }
         </style>
     </head>
     <body>
@@ -19,7 +22,10 @@
 
         <script type="text/javascript">
             $("#draggable").draggable();
-            $("#vertically-draggable").draggable({ axis: "y" });
+            $("#vertically-draggable").draggable({
+                axis: "y"
+                }
+            );
         </script>
 
     </body>
