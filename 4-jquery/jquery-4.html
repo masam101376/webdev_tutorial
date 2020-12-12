@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>jQuery-4</title>
+        <style>
+            /*
+            #fadeInText {
+                display: none;
+            }
+            */
+
+            #optionNavigator {
+                display: none;
+            }
+
+        </style>
+    </head>
+    <body>
+        <script src="jquery-3.1.1.min.js"></script>
+        
+        <button id="optionDisplaySelector">オプションを表示</button>
+        <p id="optionNavigator">Options</p>
+
+        <script type="text/javascript">
+            $("#optionDisplaySelector").click(function(){
+                if($("#optionNavigator").css("display") == "none"){
+                    $("#optionNavigator").show();
+                    $("#optionDisplaySelector").html("オプションを非表示");
+                } else {
+                    $("#optionNavigator").hide();
+                    $("#optionDisplaySelector").html("オプションを表示");
+                }
+            })
+        </script>
+
+        <!-- 
+        講義のコード
+        
+        <p id="fadeOutText">このテキストはフェードアウトします。</p>
+        <button id="fadeOut">Fade Out!</button>
+
+        <p></p>
+
+        <p id="fadeInText">最初は隠れています。</p>
+        <button id="fadeIn">Fade In!</button>
+        
+        <script type="text/javascript">
+ 
+            $("#fadeOut").click(function(){
+               $("#fadeOutText").fadeOut("slow");
+            })
+
+            $("#fadeIn").click(function(){
+               $("#fadeInText").fadeIn("slow");
+            })
+           
+        </script>
+        -->
+
+    </body>
+</html>
