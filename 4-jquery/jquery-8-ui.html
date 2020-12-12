@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>jQuery-7-regex</title>
+        <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.css">
+        <style>
+            .draggable {
+                width: 90px;
+                height: 90px;
+                padding: 0.5em;
+                float: left;
+                margin: 0 10px 10px 0;
+            }
+
+            #vertically-draggable {
+                margin-bottom: 20px;
+                cursor: n-resize;
+            }
+        </style>
+    </head>
+    <body>
+        <script src="jquery-3.1.1.min.js"></script>
+        <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+
+        <div id="draggable">I am draggable</div>
+        <div id="vertically-draggable" class="draggable ui-widget-content">
+            <p>I can be dragged only vertically</p>
+        </div>
+
+        <script type="text/javascript">
+            $("#draggable").draggable();
+            $("#vertically-draggable").draggable({
+                axis: "y"
+                }
+            );
+        </script>
+
+    </body>
+</html>
